@@ -1,36 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
   <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Resume : zhanghaibo&#39;s resume" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Resume by yishenggudou</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>Resume</title>
   </head>
-
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/yishenggudou/resume">View on GitHub</a>
+      <header>
+        <h1>Resume</h1>
+        <p>zhanghaibo&#39;s resume</p>
+      </header>
 
-          <h1 id="project_title">Resume</h1>
-          <h2 id="project_tagline">zhanghaibo&#39;s resume</h2>
+      <div id="banner">
+        <span id="logo"></span>
 
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/yishenggudou/resume/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/yishenggudou/resume/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+        <a href="https://github.com/yishenggudou/resume" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/yishenggudou/resume/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/yishenggudou/resume/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
         <h1>
 <a name="%E5%BC%A0%E6%B5%B7%E6%B3%A2" class="anchor" href="#%E5%BC%A0%E6%B5%B7%E6%B3%A2"><span class="octicon octicon-link"></span></a>张海波</h1>
 
@@ -111,9 +119,10 @@
 
 <p>就职于乐视网</p>
 
-<pre><code>1-&gt;主要负责乐视cdn数据平台,多份日志总处理量在每天千亿级别
+<pre><code>1-&gt;主要负责乐视cdn数据平台,多份日志总处理量在每天千亿级别,60TB/天
 2-&gt;完成工作 包括收集,流式计算,分布式存储中间件，展示中间件
 3-&gt;基于`hadoop`构建`debug`工具
+4-&gt;完成基于 hadoop 平台数据仓库建设
 </code></pre>
 
 <hr><h2>
@@ -132,7 +141,7 @@
 <h3>
 <a name="java" class="anchor" href="#java"><span class="octicon octicon-link"></span></a>java</h3>
 
-<p>熟悉java基本,有使用<code>jsp</code>开发过网站,和写过<code>hive</code>的<code>UDF</code>, 目前学习scala中</p>
+<p>熟悉java基本,有使用<code>jsp</code>开发过网站,和写过<code>hive</code>的<code>UDF</code>, 了解<code>scala</code>和 <code>spark</code></p>
 
 <h3>
 <a name="%E6%95%B0%E6%8D%AE%E5%BA%93" class="anchor" href="#%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="octicon octicon-link"></span></a>数据库</h3>
@@ -147,7 +156,7 @@
 <h3>
 <a name="%E5%85%B6%E4%BB%96" class="anchor" href="#%E5%85%B6%E4%BB%96"><span class="octicon octicon-link"></span></a>其他</h3>
 
-<p>熟悉<code>linux</code>和<code>mac</code>工作环境, <code>vim</code>编辑器, 有学习过 <code>objective-c</code>,体验过各种产品,<code>Paas</code>,<code>Laas</code>,熟悉<code>mq</code>异步模式,以及关注golange和scala开发</p>
+<p>熟悉<code>linux</code>和<code>mac</code>工作环境, <code>vim</code>编辑器, 有学习过 <code>objective-c</code>,体验过各种产品,<code>Paas</code>,<code>Laas</code>,熟悉<code>mq</code>异步模式,以及关注<code>golang</code>和<code>scala</code>开发</p>
 
 <p>热爱<code>Google</code>和<code>Apple</code>,崇尚开源</p>
 
@@ -167,16 +176,12 @@
 
 <hr>
       </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Resume maintained by <a href="https://github.com/yishenggudou">yishenggudou</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/yishenggudou">yishenggudou</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
       </footer>
     </div>
-
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
               <script type="text/javascript">
             var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
             document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
@@ -187,7 +192,6 @@
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
-
 
   </body>
 </html>
